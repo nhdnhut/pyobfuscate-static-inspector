@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyobfuscate-inspector"
+version = "1.0.0"
+description = "A static analysis and deobfuscation audit CLI tool for Python scripts"
+authors = [
+    {name = "Nhut Nguyen", email = "penciltalk0910@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "cryptography>=41.0.0",
+]
+
+[project.scripts]
+pyobf-inspect = "pyobfuscate_inspector.cli:main"
+pyobf-deobf = "pyobfuscate_inspector.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pyobfuscate_inspector*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
