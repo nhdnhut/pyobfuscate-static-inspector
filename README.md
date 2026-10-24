@@ -1,4 +1,4 @@
-﻿# PyObfuscate Static Inspector and Deobfuscator
+# PyObfuscate Static Inspector and Deobfuscator
 
 > A static analysis, code recovery, and defensive security audit framework for Python scripts.
 > 100% Static Abstract Syntax Tree (AST) Analysis | Zero Dynamic Execution | Sandboxed Bytecode Worker
@@ -105,23 +105,23 @@ Test Results Summary:
 
 ```
 pyobfuscate-static-inspector/
-â”œâ”€â”€ examples/                   # Synthetic educational test cases
-â”œâ”€â”€ pyobfuscate_inspector/      # Core package
-â”‚   â”œâ”€â”€ ast_cleaner.py          # AST transformation and simplification
-â”‚   â”œâ”€â”€ audit_scanner.py        # Threat indicator and telemetry scanner
-â”‚   â”œâ”€â”€ cflow_recovery.py       # Control flow de-flattening engine
-â”‚   â”œâ”€â”€ cli.py                  # Command-line interface driver
-â”‚   â”œâ”€â”€ constant_fold.py        # Safe arithmetic and string folder
-â”‚   â”œâ”€â”€ crypto.py               # Cryptographic unwrapping routines
-â”‚   â”œâ”€â”€ deobfuscator.py         # Main orchestration pipeline
-â”‚   â”œâ”€â”€ detectors.py            # Obfuscation pattern detectors
-â”‚   â”œâ”€â”€ marshal_worker.py       # Sandboxed bytecode disassembler
-â”‚   â”œâ”€â”€ safe_eval.py            # Restricted AST expression evaluator
-â”‚   â””â”€â”€ symbol_renaming.py      # Identifier normalization and scoping
-â”œâ”€â”€ tests/                      # Pytest automated test harness
-â”œâ”€â”€ pyproject.toml              # Build configuration and CLI entry points
-â”œâ”€â”€ LICENSE                     # MIT License
-â””â”€â”€ README.md                   # Project documentation
+├── examples/                   # Synthetic educational test cases
+├── pyobfuscate_inspector/      # Core package
+│   ├── ast_cleaner.py          # AST transformation and simplification
+│   ├── audit_scanner.py        # Threat indicator and telemetry scanner
+│   ├── cflow_recovery.py       # Control flow de-flattening engine
+│   ├── cli.py                  # Command-line interface driver
+│   ├── constant_fold.py        # Safe arithmetic and string folder
+│   ├── crypto.py               # Cryptographic unwrapping routines
+│   ├── deobfuscator.py         # Main orchestration pipeline
+│   ├── detectors.py            # Obfuscation pattern detectors
+│   ├── marshal_worker.py       # Sandboxed bytecode disassembler
+│   ├── safe_eval.py            # Restricted AST expression evaluator
+│   └── symbol_renaming.py      # Identifier normalization and scoping
+├── tests/                      # Pytest automated test harness
+├── pyproject.toml              # Build configuration and CLI entry points
+├── LICENSE                     # MIT License
+└── README.md                   # Project documentation
 ```
 
 ---
